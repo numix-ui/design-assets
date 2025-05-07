@@ -1,164 +1,62 @@
-# Numix UI
+# Design Assets for Numix UI
 
-[![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+This repository contains all the design assets for the Numix UI project, including logos, design tokens, icons, and screenshots. These assets are essential for maintaining a consistent and visually appealing design language across the Numix UI ecosystem.
 
-Numix UI is a CSS library that brings the distinctive look and feel of the popular Numix desktop theme to your web projects. With Numix UI, you can easily style your web applications with a modern, clean, and consistent aesthetic inspired by the beloved Linux desktop environment.
+## Contents
 
-## Features
-****
-* **Familiar Numix Styling:** Provides CSS classes for common UI elements, replicating the visual style of the Numix desktop theme.
-* **Clean and Modern Design:** Offers a polished and contemporary look for your web interfaces.
-* **Easy Integration:** Simple to include in any HTML project with minimal setup.
-* **Customizable:** Built with flexibility in mind, allowing for easy adjustments and extensions.
-* **Consistent Look and Feel:** Ensures a unified visual experience across your web application.
-* **Responsive Design:** Adapts to various screen sizes and devices, ensuring a seamless experience for users.
-* **Cross-Browser Compatibility:** Works well across modern web browsers, ensuring a consistent experience for all users.
-* **Lightweight:** Minimal CSS footprint, ensuring fast load times and performance.
-* **Open Source:** Free to use and modify under the GPL-3.0 license.
-
-## Screenshots
-![Numix UI Screenshot](assets/img/Numix-UI-Screenshot-v0.1.png)
-
-## Installation
-
-You can include Numix UI in your project in a few ways:
-
-### Download and Host Locally
-
-Download the latest release of Numix UI from [LoboGuardian/numix-ui](https://github.com/LoboGuardian/numix-ui).
-Copy the numix-ui.min.css file (or the unminified numix-ui.css if you prefer) into your project's CSS directory.
-Link to the CSS file in the <head> of your HTML document:
-
-```HTML
-
-<link rel="stylesheet" href="css/numix-ui.min.css">
-```
-
-### Via CDN  (comming soon)
-
-The easiest way to get started is by using a Content Delivery Network (CDN). Simply add the following `<link>` tag to the `<head>` of your HTML document:
-
-```html
-<link rel="stylesheet" href="[https://cdn.example.com/numix-ui/latest/numix-ui.min.css](https://cdn.example.com/numix-ui/latest/numix-ui.min.css)">
-```
-
-> Note: Replace https://cdn.example.com/numix-ui/latest/numix-ui.min.css with the actual CDN URL for the latest version of Numix UI.
-
-
-### Via npm (comming soon)
-
-```Bash
-npm install numix-ui
-```
-
-Then, you can import it into your CSS or JavaScript files depending on your build process.
-
-```CSS
-
-/* In your main CSS file */
-@import 'numix-ui';
-```
-
-## Build & Minify
-
-Numix UI supports an automated build process to generate minified assets for production.
-
-### Step 1: Set up the project
-
-```bash
-npm init -y
-npm install --save-dev csso-cli uglify-js
-```
-
-### Step 2: Add build scripts to package.json (already added)
-
-```json
-"scripts": {
-  "minify:css": "csso css/numix-ui.css -o css/numix-ui.min.css",
-  "minify:js": "uglifyjs js/numix-ui.js -o js/numix-ui.min.js --compress --mangle",
-  "minify": "npm run minify:css && npm run minify:js",
-  "build": "npm run minify"
-}
-```
-
-### Step 3: Run the build
-
-```bash
-npm run build
-```
-
-This will:
-
-- Compress css/numix-ui.css → css/numix-ui.min.css
-
-- Compress js/numix-ui.js → js/numix-ui.min.js
+- **Logos:** Official logos for Numix UI in various formats and resolutions.
+- **Design Tokens:** A collection of reusable design variables (e.g., colors, typography, spacing) to ensure consistency across projects.
+- **Icons:** A set of custom icons designed for use with Numix UI.
+- **Screenshots:** High-quality screenshots showcasing the features and design of Numix UI.
 
 ## Usage
 
-To apply Numix UI styles, simply add the provided CSS classes to your HTML elements. Here are a few examples:
+You can use the assets in this repository to enhance your Numix UI projects or to create promotional materials. Please ensure that you adhere to the licensing terms when using these assets.
 
-- Buttons
+### Logos
 
-```HTML
+Logos are available in the `logos/` directory. Supported formats include:
 
-<button class="btn btn-primary">Primary Button</button>
-<button class="btn btn-secondary">Secondary Button</button>
-<button class="btn btn-default">Default Button</button>
-```
+- SVG (Scalable Vector Graphics)
+- PNG (Portable Network Graphics)
 
-- Forms
+### Design Tokens
 
-```HTML
+Design tokens are stored in the `tokens/` directory and are provided in JSON format for easy integration into your projects. These tokens include:
 
-<div class="form-group">
-  <label for="exampleInputEmail1">Email address</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-</div>
-<div class="checkbox">
-  <label>
-    <input type="checkbox"> Remember me
-  </label>
-</div>
-<button type="submit" class="btn btn-primary">Submit</button>
-```
+- **Colors:** Primary, secondary, and accent colors.
+- **Typography:** Font sizes, weights, and line heights.
+- **Spacing:** Margins and paddings.
 
-- Navigation
+### Icons
 
-```HTML
+Icons are located in the `icons/` directory and are available in SVG format. These icons are designed to complement the Numix UI theme and can be used in your web applications.
 
-<ul class="nav nav-primary">
-  <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-  <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-</ul>
-```
+### Screenshots
 
-> Note: Refer to the [documentation](not-available) for a comprehensive list of available classes and their usage.
+Screenshots of Numix UI are stored in the `screenshots/` directory. These images showcase the library's features and design and can be used for documentation or promotional purposes.
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to Numix UI, please follow these guidelines:
+We welcome contributions to this repository! If you have new assets or improvements to existing ones, please follow these steps:
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes and 1 ensure they adhere to the project's coding standards.   
-- Write clear and concise commit messages.
-- Submit a pull request with a detailed description of your changes.
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Add your assets or make modifications.
+4. Submit a pull request with a clear description of your changes.
 
-## License
+<!-- ## License -->
 
-Numix UI is open-source software licensed under the [GPL-3.0](LICENSE).
+<!-- All assets in this repository are licensed under the [GPL-3.0](LICENSE). Please review the license terms before using these assets in your projects. -->
 
 ## Acknowledgements
 
-We would like to acknowledge the creators and contributors of the original Numix desktop theme for their inspiring work.
+We would like to thank the contributors and designers who have helped create and maintain these assets. Your work ensures that Numix UI remains visually stunning and consistent.
 
 ## Stay Connected
 
-Follow us on GitHub for updates and new releases:
+For updates and new releases, follow us on GitHub:
 
-- [Numix UI ](https://github.com/numix-ui/numix-ui)
-- [Based Work LoboGuardian/Numix UI ](https://github.com/LoboGuardian/numix-ui)
+- [Numix UI](https://github.com/numix-ui/numix-ui)
 
-Thank you for using Numix UI! We hope you enjoy bringing the Numix experience to the web.
+Thank you for supporting Numix UI! We hope these assets help you create amazing projects.
